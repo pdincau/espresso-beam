@@ -107,8 +107,3 @@ convert_to_json(Actors) ->
     JsonData = {obj, [{env_state, Data}]},
     rfc4627:encode(JsonData).
 
-    
-actors() ->
-    [{actor, pid1,wolf,{26,4}},
-     {actor, pid2,rabbit,{12,2}},
-     {actor,pid3,carrot,{13,16}}].
